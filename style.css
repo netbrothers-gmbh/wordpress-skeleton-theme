@@ -4,7 +4,10 @@ Theme URI: https://netbrothers.de
 Author: Thilo Ratnaweera <info@netbrothers.de>
 Author URI: https://www.linkedin.com/in/thilo-ratnaweera/
 Description: This minimalistic skeleton theme is intended as a starting point, if you plan to develop a WordPress theme from scratch.
+Tags: skeleton, developer, minimalistic, minimal, translation-ready
 Version: 1.0.0
+Requires at least: 6.4.0
+Requires PHP: 8.1
 License: GPL-3.0-or-later
 License URI: https://spdx.org/licenses/GPL-3.0-or-later.html
 Text Domain: nb-wordpress-skeleton-theme
