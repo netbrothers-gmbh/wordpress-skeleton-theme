@@ -27,8 +27,8 @@ $postLinkTitle = sprintf(
         <?php
         echo sprintf(
             /* translators: 1: Post date 2: Post author */
-            __('%1$s, by %2$s', 'nb-wordpress-skeleton-theme'),
-            get_the_time('c'),
+            __('%1$s by %2$s', 'nb-wordpress-skeleton-theme'),
+            get_the_date(),
             get_the_author()
         )
         ?>
@@ -36,6 +36,7 @@ $postLinkTitle = sprintf(
     <div class="post-preview__excerpt">
         <?php the_excerpt(); ?>
     </div>
+    <br>
     <a class="post-preview__morelink" href="<?php echo $permaLink; ?>"
         rel="bookmark"
         title="<?php echo $postLinkTitle; ?>">
