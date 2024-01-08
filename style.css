@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Project: wordpress-skeleton-theme
+ * 
+ * @author Thilo Ratnaweera <thilo.ratnaweera@netbrothers.de>
+ * @copyright © 2024 NetBrothers GmbH.
+ * @license GPLv3
+ */
+
+:root {
+  --nb-breakpoint-sm: 576px;
+  --nb-breakpoint-md: 768px;
+  --nb-breakpoint-lg: 992px;
+  --nb-breakpoint-xl: 1200px;
+  --nb-breakpoint-xxl: 1400px;
+  --nb-color-header-bg: black;
+  --nb-color-header-text: white;
+  --nb-color-body-bg: rgba(0, 0, 0, 0.25);
+  --nb-color-body-text: rgba(0, 0, 0, 0.75);
+  --nb-color-footer-bg: black;
+  --nb-color-footer-text: white;
+  --nb-natural-padding: 1rem 3rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--nb-color-body-bg);
+  display: flex;
+  color: var(--nb-color-body-text);
+  flex-direction: column;
+  font-size: var(--nb-body-font-size);
+  margin: 0 auto;
+  max-width: 1200px;
+  --nb-body-font-size: 1.9rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: calc(var(--nb-body-font-size) * 1.9);
+}
+
+h2 {
+  font-size: calc(var(--nb-body-font-size) * 1.4);
+}
+
+header {
+  background-color: var(--nb-color-header-bg);
+  color: var(--nb-color-header-text);
+  display: flex;
+  flex-direction: column;
+  padding: var(--nb-natural-padding);
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  header {
+    flex-direction: row;
+  }
+}
+
+#content-container {
+  display: flex;
+  flex-direction: row;
+  /* break sidebar if not enough space */
+  flex-wrap: wrap;
+}
+
+main, aside {
+  padding: var(--nb-natural-padding);
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: var(--nb-breakpoint-md);
+    width: auto;
+  }
+  aside {
+    flex-grow: 1;
+    max-width: calc(var(--nb-breakpoint-lg) - var(--nb-breakpoint-md));
+    width: auto;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    flex-direction: row;
+  }
+}
+
+footer {
+  background-color: var(--nb-color-footer-bg);
+  color: var(--nb-color-footer-text);
+  margin-top: 5rem;
+  padding: var(--nb-natural-padding);
+}
+
+a {
+  color: inherit;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post-preview__meta {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
