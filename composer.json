@@ -2,7 +2,7 @@
     "name": "netbrothers-gmbh/wordpress-skeleton-theme",
     "description": "This minimalistic skeleton theme is intended as a starting point, if you plan to develop a WordPress theme from scratch.",
     "type": "wordpress-theme",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "NetbrothersGmbh\\WordpressSkeletonTheme\\": "Classes/"
